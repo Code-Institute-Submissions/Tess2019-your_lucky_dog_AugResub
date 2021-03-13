@@ -5,7 +5,7 @@ html {
 body{
     background: url('/media/happy_white_dog.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh -180px);
+    height: 100vh;
     color: #555;
     font-family: 'Noto Sans', sans-serif; 
 }
@@ -48,6 +48,10 @@ body{
 
 .text-black{
     color: #000 !important
+}
+
+.bg-white {
+    background: white;
 }
 
 /* -------------------------------- Media Queries-------------------------- */
