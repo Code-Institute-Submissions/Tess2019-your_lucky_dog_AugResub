@@ -5,9 +5,9 @@
   <head>
     
     {% block meta %}
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {% endblock %}
 
     {% block extra_meta %}
@@ -45,24 +45,9 @@
                     <h2 class="logo-font text-black my-0"><strong>Your Lucky Dog</strong></h2>
                 </a>
             </div>
-            <div class="row bg-white">
-                <nav class="navbar navbar-expend-lg navbar-light w-100">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    {% include 'includes/mobile-top-header.html' %}
-                    {% include 'includes/main-nav.html' %}
-                </nav>
-            </div>
-            <!---banner---
-            <div id ="delivery-banner" class="row text-center">
-                <div class="col bg-white text-black">
-                    <h4 class="logo-font my-1">Free delivery on orders over ${{ free_shipping_threshold}}</h4>
-                </div>
-            </div>--->
             <!---search engine-->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <form method="GET" action="">
+                <form method="GET" action="{% url 'products %}">
                     <div class="input-group w-100">
                         <input class="form-control border border-blue rounded-0" type="text" name="q" placeholder="Search product">
                         <div class="input-group-append">
@@ -79,7 +64,7 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                    <li class="list-inline-item dropdown">
-                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-hashpopup="true" aria-expanded="false">
+                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
                                 <p class="my-0">My Account</p>
@@ -116,6 +101,21 @@
                 </ul>
             </div>
         </div>
+        <div class="row bg-white">
+                <nav class="navbar navbar-expend-lg navbar-light w-100">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    {% include 'includes/mobile-top-header.html' %}
+                    {% include 'includes/main-nav.html' %}
+                </nav>
+            </div>
+            <!---banner---
+            <div id ="delivery-banner" class="row text-center">
+                <div class="col bg-white text-black">
+                    <h4 class="logo-font my-1">Free delivery on orders over ${{ free_shipping_threshold}}</h4>
+                </div>
+            </div>--->
     </header>
 
     {% if messages %}
