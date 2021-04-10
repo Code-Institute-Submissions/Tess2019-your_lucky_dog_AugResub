@@ -5,11 +5,12 @@ html {
 body {
     background: url('/media/happy_white_dog.jpg') no-repeat center center fixed;
     background-size: cover;
-    height:100vh;
+    height:calc(100vh - 164px);
     color: #555;
     font-family: 'Noto Sans', sans-serif; 
 }
 
+/* from Bulma */
 .icon {
     align-items: center;
     display: inline-flex;
@@ -52,6 +53,16 @@ body {
 
 .bg-white {
     background: white;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
 }
 
 /* -------------------------------- Media Queries-------------------------- */
