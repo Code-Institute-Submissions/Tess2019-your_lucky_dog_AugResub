@@ -11,6 +11,12 @@ def all_products(request):
 
     products = Product.objects.all()
     query = None
+    category = None
+
+    if request.GET:
+        if 'category' in request.GET:
+            categories = request.GET['category'].split(',')
+            products = products.filter(category)
 
     if request.GET:
         if 'q' in request.GET:

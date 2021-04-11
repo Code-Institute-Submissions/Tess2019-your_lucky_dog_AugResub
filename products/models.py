@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Categories(models.Model):
+class Category(models.Model):
 
         class Meta:
             verbose_name_plural = 'Categories'
@@ -17,7 +17,7 @@ class Categories(models.Model):
 
 
 class Product(models.Model):
-    categories = models.ForeignKey('Categories', null=True, blank=True, on_delete=models.SET_NULL)
+    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     # copied from ckz8780
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
