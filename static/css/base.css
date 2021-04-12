@@ -18,18 +18,29 @@ body {
     height: 1.5rem;
     width: 1.5rem;
 }
+#topnav{
+    background: #439981 !important;
+}
 
 .logo-font {
     text-transform: uppercase;
+}
+.logo-font strong {
+    color:#fff;
 }
 
 .main-logo-link {
     width: fit-content;
 }
 
+#delivery-banner {
+    background: #439981;
+    color: #fff !important;
+}
+
 .shop-now-button {
-    background: blue;
-    color:black;
+    background:#439981;
+    color:#fff;
     min-width: 260px;
 }
 .btn-blue {
@@ -48,7 +59,7 @@ body {
 }
 
 .text-black {
-    color: #000 !important
+    color: #191919 !important;
 }
 
 .bg-white {
@@ -63,6 +74,11 @@ body {
     position: fixed;
     background: white;
     z-index: -1;
+}
+
+a.category-badge > span.badge:hover {
+    background:#B3B6B7 !important ;
+    color:#fff !important;
 }
 
 /* -------------------------------- Media Queries-------------------------- */
