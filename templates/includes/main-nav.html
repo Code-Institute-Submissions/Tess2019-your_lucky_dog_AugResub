@@ -19,13 +19,13 @@
         </li> 
 
          <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="dog-beds-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="bolster-dog-beds-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                  Bolster Beds
             </a> 
             <div class="dropdown-menu border-0" aria-labelledby="bolster-beds-link">
-                <a href="{% url 'products' %}?category=bolster dog beds" class="dropdown-item">bolster</a>
                 <a href="{% url 'products' %}?category=washable" class="dropdown-item">Washable</a>
-                <a href="{% url 'products' %}?category=bolster dog beds,memory foam, washable" class="dropdown-item">All Beds</a>
+                <a href="{% url 'products' %}?category=removable cover" class="dropdown-item">Removable Cover</a>
+                <a href="{% url 'products' %}?category=bolster dog beds,memory foam, washable, removable cover" class="dropdown-item">All Beds</a>
             </div>
         </li>
 
@@ -34,10 +34,9 @@
                 Sofa Beds
             </a> 
             <div class="dropdown-menu border-0" aria-labelledby="sofa-beds-link">
-                <a href="" class="dropdown-item"></a>
-                <a href="" class="dropdown-item"></a>
-                <a href="" class="dropdown-item"></a>
-                <a href="" class="dropdown-item"></a>
+                <a href="{% url 'products' %}?category=washable" class="dropdown-item">Washable</a>
+                <a href="{% url 'products' %}?category=removable cover" class="dropdown-item">Removable Cover</a>
+                <a href="{% url 'products' %}?category=Sofa dog beds, washable, removable covers" class="dropdown-item">All Beds</a>
             </div>
         </li>
 
@@ -46,21 +45,38 @@
                  Hooded/Dome beds 
             </a> 
             <div class="dropdown-menu border-0" aria-labelledby="hooded-beds-link">
-                <a href="" class="dropdown-item">Hooded/Dome Beds</a>
-                <a href="" class="dropdown-item">By designer</a>
-                <a href="" class="dropdown-item">All Beds</a>
+                <a href="{% url 'products' %}?category=washable" class="dropdown-item">Washable</a>
+                <a href="{% url 'products' %}?category=removable_cover" class="dropdown-item">Removable Cover</a>
+                <a href="{% url 'products' %}?category=hooded/dome dog beds, washable, removable_covers" class="dropdown-item">All Beds</a>
             </div>
         </li>
+
+       <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-designer-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                By designer
+            </a> 
+           <div class="dropdown-menu border-0" aria-labelledby="-all-designer-link">
+                <a href="{% url 'products' %}?category=archie_oscar" class="dropdown-item">Archie & Oscar</a>
+                <a href="{% url 'products' %}?category=tucker murphy pet" class="dropdown-item">Tucker Murphy Pet</a>
+                <a href="{% url 'products' %}?category=Beautyrest" class="dropdown-item">Beautyrest</a>
+                <a href="{% url 'products' %}?category=majestic pet products" class="dropdown-item">Majestic Pet Products</a>
+                <a href="{% url 'products' %}?category=martha stewart" class="dropdown-item">Martha Stewart</a>
+                <a href="{% url 'products' %}?category=wayfair basics" class="dropdown-item">Wayfair basics</a>
+                <a href="{% url 'products' %}?category=best friends by sheri" class="dropdown-item">Best Friends By Sheri</a>
+                <a href="{% url 'products' %}?category=serta" class="dropdown-item">Serta</a>
+                <a href="{% url 'products' %}?category=designer, archie_oscar, tucker murphy pet, Beautyrest, majestic pet products, martha stewart, wayfair basics, best friends by sheri, serta " class="dropdown-item">All designers</a>
+            </div>
+        </li> 
         
          <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Special Offers
             </a> 
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivials</a>
-                <a href="" class="dropdown-item">Deals </a>
-                <a href="" class="dropdown-item">Clearence</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivials" class="dropdown-item">New Arrivials</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals </a>
+                <a href="{% url 'products' %}?category=clearence" class="dropdown-item">Clearence</a>
+                <a href="{% url 'products' %}?category=new_arrivials, deals, clearence" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
