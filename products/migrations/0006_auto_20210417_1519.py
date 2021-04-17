@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.RemoveField(
-            model_name='category',
+            model_name='categories',
             name='products',
         ),
         migrations.RemoveField(
@@ -21,7 +21,7 @@ class Migration(migrations.Migration):
         ),
         migrations.AddField(
             model_name='product',
-            name='category',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='products.category'),
+            name='categories',
+            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='products.categories'),
         ),
     ]

@@ -12,10 +12,10 @@ class Migration(migrations.Migration):
     operations = [
         migrations.RemoveField(
             model_name='product',
-            name='category',
+            name='categories',
         ),
         migrations.AddField(
-            model_name='category',
+            model_name='categories',
             name='products',
             field=models.ManyToManyField(to='products.Product'),
         ),
