@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item d-block d-md-none">
@@ -12,7 +13,7 @@
             <div class="dropdown-menu border-0" aria-labelledby="All-products-link">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item">By Ratings</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
+                <a href="{% url 'products' %}?sort=categories&direction=asc" class="dropdown-item">By Category</a>
                 <a href="{% url 'products' %}?sort=designer&direction=asc" class="dropdown-item">By Designer</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
@@ -23,9 +24,9 @@
                  Bolster Beds
             </a> 
             <div class="dropdown-menu border-0" aria-labelledby="bolster-beds-link">
-                <a href="{% url 'products' %}?category=washable" class="dropdown-item">Washable</a>
-                <a href="{% url 'products' %}?category=removable cover" class="dropdown-item">Removable Cover</a>
-                <a href="{% url 'products' %}?category=bolster dog beds, washable, removable cover" class="dropdown-item">All Beds</a>
+                <a href="{% url 'products' %}?categories=washable" class="dropdown-item">Washable</a>
+                <a href="{% url 'products' %}?categories=removable cover" class="dropdown-item">Removable Cover</a>
+                <a href="{% url 'products' %}?categories=bolster dog beds, washable, removable cover" class="dropdown-item">All Beds</a>
             </div>
         </li>
 
@@ -34,9 +35,9 @@
                 Sofa Beds
             </a> 
             <div class="dropdown-menu border-0" aria-labelledby="sofa-beds-link">
-                <a href="{% url 'products' %}?category=washable" class="dropdown-item">Washable</a>
-                <a href="{% url 'products' %}?category=removable cover" class="dropdown-item">Removable Cover</a>
-                <a href="{% url 'products' %}?category=sofa dog beds, washable, removable covers" class="dropdown-item">All Beds</a>
+                <a href="{% url 'products' %}?categories=washable" class="dropdown-item">Washable</a>
+                <a href="{% url 'products' %}?categories=removable cover" class="dropdown-item">Removable Cover</a>
+                <a href="{% url 'products' %}?categories=sofa dog beds, washable, removable covers" class="dropdown-item">All Beds</a>
             </div>
         </li>
 
@@ -45,9 +46,9 @@
                  Hooded/Dome beds 
             </a> 
             <div class="dropdown-menu border-0" aria-labelledby="hooded-beds-link">
-                <a href="{% url 'products' %}?category=washable" class="dropdown-item">Washable</a>
-                <a href="{% url 'products' %}?category=removable_cover" class="dropdown-item">Removable Cover</a>
-                <a href="{% url 'products' %}?category=hooded/dome dog beds, washable, removable_covers" class="dropdown-item">All Beds</a>
+                <a href="{% url 'products' %}?categories=washable" class="dropdown-item">Washable</a>
+                <a href="{% url 'products' %}?categories=removable_cover" class="dropdown-item">Removable Cover</a>
+                <a href="{% url 'products' %}?categories=hooded/dome dog beds, washable, removable_covers" class="dropdown-item">All Beds</a>
             </div>
         </li>
         
@@ -56,10 +57,10 @@
                 Special Offers
             </a> 
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'products' %}?category=new_arrivials" class="dropdown-item">New Arrivials</a>
-                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals </a>
-                <a href="{% url 'products' %}?category=clearence" class="dropdown-item">Clearence</a>
-                <a href="{% url 'products' %}?category=new_arrivials, deals, clearence" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?categories=new_arrivials" class="dropdown-item">New Arrivials</a>
+                <a href="{% url 'products' %}?categories=deals" class="dropdown-item">Deals </a>
+                <a href="{% url 'products' %}?categories=clearence" class="dropdown-item">Clearence</a>
+                <a href="{% url 'products' %}?categories=new_arrivials, deals, clearence" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>

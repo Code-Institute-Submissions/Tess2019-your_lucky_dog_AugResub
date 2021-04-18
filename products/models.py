@@ -8,16 +8,17 @@ class Category(models.Model):
 
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
+    products = models.ManyToManyField('Product')
 
     def __str__(self):
         return self.name
 
-    def _get_friendly_name(self):
+    def get_friendly_name(self):
         return self.friendly_name
 
 
 class Product(models.Model):
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    category = models.ManyToManyField('category')
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()
