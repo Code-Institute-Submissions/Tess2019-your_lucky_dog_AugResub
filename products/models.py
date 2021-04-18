@@ -1,14 +1,18 @@
 from django.db import models
 
 
-class Category(models.Model):
+class Categories(models.Model):
 
     class Meta:
         verbose_name_plural = 'Categories'
 
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
+<<<<<<< HEAD
     products = models.ManyToManyField('Product')
+=======
+    products =models.ManyToManyField('Product')
+>>>>>>> 1a1b4efd67ff8316eda7485806411a1a71bbffe5
 
     def __str__(self):
         return self.name
@@ -18,7 +22,11 @@ class Category(models.Model):
 
 
 class Product(models.Model):
+<<<<<<< HEAD
     category = models.ManyToManyField('category')
+=======
+    categories = models.ManyToManyField('Categories')
+>>>>>>> 1a1b4efd67ff8316eda7485806411a1a71bbffe5
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()
