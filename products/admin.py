@@ -8,7 +8,7 @@ class ProductAdmin(admin.ModelAdmin):
     list_display = (
         'sku',
         'name',
-        'categories',
+        'category',
         'price',
         'rating',
         'designer',
