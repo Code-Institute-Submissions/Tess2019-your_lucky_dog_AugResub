@@ -3,7 +3,7 @@ This Milestone project is an e-commerce website. My inspiration comes from the l
 This Application will allow an admin to store and manipulate data records. Also allow users to read about dog beds, purchase them and update or delete products in the shopping basket on your lucky dog website.
 The site is created on a full stack Django framework, deployed on Heroku and uses AWS S3 to host media and static files. While working locally it uses the Sqlite3 database, but when deployed to Heroku a Postgres database. Full authentication on site is provided by Django Allauth. Super users have availability to add, edit and delete items.
 
-!(/landingpage.jpg)
+![landingpage](imagesreadme4/landingpage.jpg)
 
 My wireframe
 
