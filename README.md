@@ -102,13 +102,30 @@ By selecting a product, get redirected to the product page to read a detailed de
 
 * View total of purchased items any time 
 The total sum of added products is shown in the right corner.
+
+ 
  ![totalsum](imagesreadme4/totalsum.jpg)
+ 
+
+
+
+
+
+
+
+
 Sorting and Searching
+
 
 * Sort a specific category of products.
 By clicking all products in the menu they can see the sorting of products by category, price, ratings or designer.
+
   
-  ![searchbycategory](imagesreadme4/searchbycategory.jpg)
+
+![searchbycategory](imagesreadme4/searchbycategory.jpg)
+
+
+
 
 
 
@@ -122,7 +139,13 @@ Admin and Store Management
 * Add a category
 
 
+
 ![newcategoryadmin](imagesreadme4/newcategoryadmin)
+
+
+
+
+
 
 
 Features left to implement
