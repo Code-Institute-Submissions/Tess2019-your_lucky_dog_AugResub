@@ -1,0 +1,1 @@
+web:gunicorn your_lucky_dog.wsgi:application
