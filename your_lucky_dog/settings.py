@@ -29,7 +29,7 @@ SECRET_KEY = '+jw0iy*$!+xd4=shzmo92zy67%$3m87*-mh9ab^xk97f+=u5dq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['Tess2019/your_lucky_dog.herukoapp.com', 'localhost']
 
 
 # Application definition
