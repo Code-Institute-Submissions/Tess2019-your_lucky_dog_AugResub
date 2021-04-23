@@ -218,7 +218,10 @@ One of those spelling mistakes was that I wrote a bag not a basket.
 after the spelling correction it showed up as expected
 
 
+
+
 ![issueshoppingbasket](imagereadme4/issueshoppingbasket.jpg)
+
 
 
 
