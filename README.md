@@ -5,7 +5,7 @@ The site is created on a full stack Django framework, deployed on Heroku and use
 
 ![landingpage](imagesreadme4/landingpage.jpg)
 
-My wireframe
+My [wireframe](wireframes/wireframe-ms4 (1).png
 
 
 ### ## UX
