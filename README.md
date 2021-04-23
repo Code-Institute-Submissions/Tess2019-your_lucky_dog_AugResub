@@ -226,6 +226,11 @@ after the spelling correction it showed up as expected
 
 
 
+
+
+
+
+
 The issue of  files in the wrong place did cause me a lot of trouble. I couldn't get the path or the links in mobileview or in base.html to show when trying to runserver.The url.py couldn't be read properly. It was one too deep. Solved by removing the url.py and placing it one up in a folder basket.
 ![issueonetodeep](imagesreadme4/issueonetodeep.jpg)
 
