@@ -90,54 +90,40 @@ As a user i want to be able to:                                                 
 Select a product to show more on the home page and you will be able to see products and scroll down on the page.
   
   
-
-
+![allproductpage](imagesreadme4/allproductpage.jpg)
 
 
 
 * View individual product details.
 By selecting a product, get redirected to the product page to read a detailed description.
-  
+  ![detailpage](imagesreadme4/detailpage.jpg)
 
 
 
 * View total of purchased items any time 
 The total sum of added products is shown in the right corner.
-
+ ![totalsum](imagesreadme4/totalsum.jpg)
 Sorting and Searching
 
 * Sort a specific category of products.
 By clicking all products in the menu they can see the sorting of products by category, price, ratings or designer.
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  ![searchbycategory](imagesreadme4/searchbycategory.jpg)
 
 
 
 * Search for a product by name or description.
 Product name or a word for example “soft” and the result of the products with the name somewhere in the name or description will show.
   
-
+![searchengine](imagesreadme4/searchengine.jpg)
 
 
 Admin and Store Management
 * Add a category
 
 
-![newcategoryadmin]()
-![newcategoryadmin2]()
+![newcategoryadmin](imagesreadme4/newcategoryadmin)
+![newcategoryadmin2](imagesreadme4/newcategoryadmin2)
 
 
 
