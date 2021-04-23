@@ -90,7 +90,7 @@ As a user i want to be able to:                                                 
 Select a product to show more on the home page and you will be able to see products and scroll down on the page.
   
   
-![allproductpage](imagesreadme4/allproductpage.jpg)
+![allproductpage](imagesreadme4/allproductspage.jpg)
 
 
 
@@ -123,13 +123,9 @@ Admin and Store Management
 
 
 ![newcategoryadmin](imagesreadme4/newcategoryadmin)
-![newcategoryadmin2](imagesreadme4/newcategoryadmin2)
-
-
 
 
 Features left to implement
-
 
 
 
@@ -146,13 +142,6 @@ Features left to implement
 * Overall consistent color scheme
 * Moore banners for showing the user special offers 
 * Footer with contact information
-
-
-
-
-
-
-
 
 
 
@@ -206,15 +195,13 @@ One of those spelling mistakes was that I wrote a bag not a basket.
 after the spelling correction it showed up as expected
 
 
-![issueshoppingbasket](issueshoppingbasket.jpg)
+![issueshoppingbasket](imagereadme4/issueshoppingbasket.jpg)
 
 
 
 
 The issue of  files in the wrong place did cause me a lot of trouble. I couldn't get the path or the links in mobileview or in base.html to show when trying to runserver.The url.py couldn't be read properly. It was one too deep. Solved by removing the url.py and placing it one up in a folder basket.
-![issueonetodeep](issueonetodeep.jpg)
-
-
+![issueonetodeep](imagesreadme4/issueonetodeep.jpg)
 
 
 
