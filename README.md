@@ -317,6 +317,8 @@ The static files and media files are hosted in the AWS S3 Bucket. But you are fr
 Most of the content code base presentented are followed from the Code Institute course.I'd like to thank Code Institute for a lot of what I have achieved with my project. To follow the tutorials and read the codes is an easier learning process and clearly best practice. 
 Then it’s for me to slightly personalize the page to fit my likings, for me to learn the basics this way has been amazing, then to see what can be done more to the code if i want.
 
+Big thanks to my mentor Dick Vlaanderen for the support and guidance.
+
 
 ###### Code
 
