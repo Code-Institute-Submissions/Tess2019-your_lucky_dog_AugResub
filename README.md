@@ -246,13 +246,13 @@ Deployment run locally
 
 To be able to run this project, the following tools have to be installed:
 * An IDE of your choice
-* Git
-* PIP
-* Python 3
+* [Git](https://git-scm.com/)
+* [PIP](https://pypi.org)
+* [Python 3](https://python.org)
 Apart from that, you also need to create accounts with the following services:
-* Stripe
-* AWS to setup the S3 basket
-* Gmail
+* [Stripe](https://stripe.org)
+* [AWS](https://aws.amazon.com) to setup the S3 basket
+* [Gmail](https://google.com)
 Directions
 1. You can save a copy of this repository by clicking the green button Clone or download , then Download Zip button, and after extract the Zip file to your folder.
 In the terminal window of your local IDE change the directory (CD) to the correct file location (directory that you have just created).
@@ -280,8 +280,10 @@ python3 manage.py createsuperuser
    8. You will now be able to run the application using the following command:
 python3 manage.py runserver
    9. To access the admin panel, you can add the /admin path at the end of the url link and login using your superuser credentials.
-Heroku Deployment
-To deploy the project to Heroku the following steps need to be completed:
+
+**Heroku Deployment
+
+To deploy the project to [Heroku](https://heroku.com) the following steps need to be completed:
       1. Create a requirement.txt file, which contains a list of the dependencies, using the following command in the terminal:
 pip3 freeze > requirements.txt
       2. Create a Procfile, in order to tell Heroku how to run the project
@@ -306,7 +308,7 @@ To do so, from the Heroku dashboard follow the steps:
          * Deploy section -> Deployment method -> select GitHub and follow the instructions.
          15. After successful deployment, you can view your app by clicking Open App on Heroku platform.
  Hosting media files with AWS
-The static files and media files are hosted in the AWS S3 Bucket. But you are free to choose any other service you are familiar with.
+The static files and media files are hosted in the [AWS](https://aws.amazon.com) S3 Bucket. But you are free to choose any other service you are familiar with.
   
 ## Credits
 
@@ -324,16 +326,16 @@ Big thanks to my mentor Dick Vlaanderen for the support and guidance.
 Bootstrap is the main source for the cards, buttons and input fields.
 
 
-The dog bed Images, text,price and description details are sourced  from Wayfair
+The dog bed Images, text,price and description details are sourced from [Wayfair](https://www.wayfair.com/pet/cat/dog-beds-c409475.html)
 
 
 ###### Acknowledgement
 
 
-usabilla blog website was used to learn more about color blindness.
+[usabilla](https://usabilla.com/blog/how-to-design-for-color-blindness/) blog website was used to learn more about color blindness.
 
 
-Some of the text snippet formulations in design in this readme is copied and nuanced to match my process from  rodrigoneumann .
+Some of the text snippet formulations in design in this readme is copied and nuanced to match my process from  [rodrigoneumann](https://github.com/rodrigoneumann/photographer-ms4) .
 
 
-The part deploying is copied from sneachda who wrote the description so well and just had to slightly alter it. I think the deployment “how to” looks slightly all over the same so I can absolutely get sneachda credit for the description.
+The part deploying is copied from [sneachda](https://github.com/sneachda/vintage_ms4) who wrote the description so well and just had to slightly alter it. I think the deployment “how to” looks slightly all over the same so I can absolutely get sneachda credit for the description.
