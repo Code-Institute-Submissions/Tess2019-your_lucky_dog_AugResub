@@ -328,7 +328,7 @@ Bootstrap is the main source for the cards, buttons and input fields.
 The dog bed Images, text,price and description details are sourced  from Wayfair
 
 
-###### Acknowledgement
+###### Acknowledgement 
 
 
 usabilla blog website was used to learn more about color blindness.
