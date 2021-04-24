@@ -75,14 +75,18 @@ The shopping basket for now is showing the total sum of added products. But for 
 ###### Typography
 
 The same font is used across the website. The font-weight has been adjusted accordingly for the elements that need to stand out more or need to be more readable.
-Buttons
+
+##### Buttons
+
 The buttons are copied from bootstrap and sized to my liking.
 Defensive design for this application was implemented where possible via function views, form field types, model fields and even in the templates themselves. Throughout the development of the project, all aspects of developed and present Defensive Design elements were tested thoroughly  through local preview.
 
 ###### Wireframes
 
 These wireframes are made from an extension in google docs, wireframePro.
- Existing Features
+
+
+## Existing Features
 
 
 As a user i want to be able to:                                                                                                                                        Viewing and Navigation
@@ -170,28 +174,28 @@ Features left to implement
 
 Languages, Frameworks, Editors & Version Control:
 * HTML, CSS, JS & Python - core languages used to create this multi-page CRUD application.
-* Django - Used as clean and pragmatic design following the model-template-view approach.
-* Bootstrap Framework - Used as the core structuring layout for the application, ensuring mobile-first design and screen size fluidity.
+* [Django](https://www.djangoproject.com) - Used as clean and pragmatic design following the model-template-view approach.
+* [Bootstrap](https://www.getbootstrap.com) - Used as the core structuring layout for the application, ensuring mobile-first design and screen size fluidity.
 * Bootstrap's Imported Javascript & JQuery - For the Modal and Responsive Navbar expand & collapse functionality.
-* Git - Installed on local device and 
-* Github - Used to host the repository of all previous versions of the build and linked to Heroku to push the latest changes to the deployed build version held there.
-* Heroku - A cloud platform as a service enabling deployment for this CRUD application.
-* AWS -is the world's most comprehensive and broadly adopted cloud platform. 
-* Psycopg2 - PostgreSQL database adapter for Python.
-* Jinja - It is the default templating language for Django used for display data from the python application in Html templates.
-* Pillow - is a free and open source library for the Python programming language that allows you to easily create & manipulate digital images.
+* [Git](https://www.git-scm.com) - Installed on local device and 
+* [Github](https://www.github.com) - Used to host the repository of all previous versions of the build and linked to Heroku to push the latest changes to the deployed build version held there.
+* [Heroku](https://www.heroku.com) - A cloud platform as a service enabling deployment for this CRUD application.
+* [AWS](https://www.aws.amazon.com) -is the world's most comprehensive and broadly adopted cloud platform. 
+* [Psycopg2](https://www.pypi.org) - PostgreSQL database adapter for Python.
+* [Jinja](https://www.jinja.palletsproject.com) - It is the default templating language for Django used for display data from the python application in Html templates.
+* [Pillow](https://www.pillow.readthedocs.io) - is a free and open source library for the Python programming language that allows you to easily create & manipulate digital images.
 Tools Used:
-* PostgreSQL - A free and open-source relational database management system emphasizing extensibility and technical standards compliance. Designed to handle workloads including Web services with many concurrent users.
+* [PostgreSQL](https://www.postgresql.org) - A free and open-source relational database management system emphasizing extensibility and technical standards compliance. Designed to handle workloads including Web services with many concurrent users.
 * Google Chrome DevTools - Used to test the application's functionality, the responsiveness of same, and the CSS visualisation, as well as assisting in such tasks as figuring out the correct style properties to override Bootstraps user agent styling.
-* Code institute full template - tool was provided for students to this project to get us started.
-* W3C HTML Validator & W3C CSS Validator & JSHint - Used to check the validity and efficiency of my code.
-* Django Extensions Plugin - For validating my templates for any jinja rendering errors.
-* Diffchecker.com - is a diff tool to compare text differences between two text files.
-* Font Awesome Icons - For icons like shopping basket and User account
+* [Code institute full template](https://github.com/Code-Institute-Org/gitpod-full-template) - tool was provided for students to this project to get us started.
+* [W3C HTML Validator & W3C CSS Validator](https://www.jigsaw.w3.org) & JSHint - Used to check the validity and efficiency of my code.
+* [Diffchecker](https://www.diffchecker.com) - is a diff tool to compare text differences between two text files.
+* [Font Awesome](https://www.fontawsome.com) Icons - For icons like shopping basket and User account
 * Table To Markdown - Used to convert Excel spreadsheet table to markdown.
-* Wireframepro - the free option for this project
-* ParseHub-  Free web scraping tool.
-* miniwebtool - Django secret key generator
+* [Wireframepro](https://mockflow.com/apps/wireframepro/) - the free option for this project
+* [ParseHub]-(https://www.parsehub.com)  Free web scraping tool.
+* [miniwebtool](https://miniwebtool.com/django-secret-key-generator/) - Django secret key generator
+
 
 
 
@@ -247,13 +251,13 @@ Deployment run locally
 
 To be able to run this project, the following tools have to be installed:
 * An IDE of your choice
-* Git
-* PIP
-* Python 3
+* [Git](https://git-scm.com/)
+* [PIP](https://pypi.org)
+* [Python 3](https://python.org)
 Apart from that, you also need to create accounts with the following services:
-* Stripe
-* AWS to setup the S3 basket
-* Gmail
+* [Stripe](https://stripe.org)
+* [AWS](https://aws.amazon.com) to setup the S3 basket
+* [Gmail](https://google.com)
 Directions
 1. You can save a copy of this repository by clicking the green button Clone or download , then Download Zip button, and after extract the Zip file to your folder.
 In the terminal window of your local IDE change the directory (CD) to the correct file location (directory that you have just created).
@@ -319,22 +323,24 @@ Then it’s for me to slightly personalize the page to fit my likings, for me to
 
 Big thanks to my mentor Dick Vlaanderen for the support and guidance.
 
+Many thanks to the tutor support especially Tim and Cormac, they are calm and great to explain stuff. 
+
 
 ###### Code
 
 Bootstrap is the main source for the cards, buttons and input fields.
 
 
-The dog bed Images, text,price and description details are sourced  from Wayfair
+The dog bed Images, text,price and description details are sourced from [Wayfair](https://www.wayfair.com/pet/cat/dog-beds-c409475.html)
 
 
-###### Acknowledgement 
+###### Acknowledgement
 
 
-usabilla blog website was used to learn more about color blindness.
+[usabilla](https://usabilla.com/blog/how-to-design-for-color-blindness/) blog website was used to learn more about color blindness.
 
 
-Some of the text snippet formulations in design in this readme is copied and nuanced to match my process from  rodrigoneumann .
+Some of the text snippet formulations in design in this readme is copied and nuanced to match my process from  [rodrigoneumann](https://github.com/rodrigoneumann/photographer-ms4) .
 
 
-The part deploying is copied from sneachda who wrote the description so well and just had to slightly alter it. I think the deployment “how to” looks slightly all over the same so I can absolutely get sneachda credit for the description.
+The part deploying is copied from [sneachda](https://github.com/sneachda/vintage_ms4) who wrote the description so well and just had to slightly alter it. I think the deployment “how to” looks slightly all over the same so I can absolutely get sneachda credit for the description.
