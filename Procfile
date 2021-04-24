@@ -1,1 +1,1 @@
-web:gunicorn your_lucky_dog.wsgi:application
+web: gunicorn your_lucky_dog.wsgi:application
