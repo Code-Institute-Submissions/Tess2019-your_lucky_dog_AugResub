@@ -5,10 +5,10 @@ The site is created on a full stack Django framework, deployed on Heroku and use
 
 ![landingpage](imagesreadme4/landingpage.jpg)
 
-My [wireframe](wireframes/wireframe-ms4 (1).png
+My [wireframe](wireframes/wireframe-ms4.png)
 
 
-### ## UX
+### UX
 
 
 As a user i want to be able to do in: 
@@ -82,7 +82,9 @@ Defensive design for this application was implemented where possible via functio
 ###### Wireframes
 
 These wireframes are made from an extension in google docs, wireframePro.
- Existing Features
+
+
+####Existing Features
 
 
 As a user i want to be able to:                                                                                                                                        Viewing and Navigation
@@ -138,9 +140,7 @@ Product name or a word for example “soft” and the result of the products wit
 Admin and Store Management
 * Add a category
 
-
-
-![newcategoryadmin](imagesreadme4/newcategoryadmin)
+![newcategoryadmin](imagesreadme4/newcategoryadmin.jpg)
 
 
 
