@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['your-lucky-dog.herukoapp.com', 'localhost']
+ALLOWED_HOSTS = ['Tess2019/your-lucky-dog.herukoapp.com', 'localhost']
 
 
 # Application definition
