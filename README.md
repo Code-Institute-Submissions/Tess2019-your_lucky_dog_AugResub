@@ -170,28 +170,27 @@ Features left to implement
 
 Languages, Frameworks, Editors & Version Control:
 * HTML, CSS, JS & Python - core languages used to create this multi-page CRUD application.
-* Django - Used as clean and pragmatic design following the model-template-view approach.
-* Bootstrap Framework - Used as the core structuring layout for the application, ensuring mobile-first design and screen size fluidity.
+* [Django](https://www.djangoproject.com) - Used as clean and pragmatic design following the model-template-view approach.
+* [Bootstrap](https://www.getbootstrap.com) - Used as the core structuring layout for the application, ensuring mobile-first design and screen size fluidity.
 * Bootstrap's Imported Javascript & JQuery - For the Modal and Responsive Navbar expand & collapse functionality.
-* Git - Installed on local device and 
-* Github - Used to host the repository of all previous versions of the build and linked to Heroku to push the latest changes to the deployed build version held there.
-* Heroku - A cloud platform as a service enabling deployment for this CRUD application.
-* AWS -is the world's most comprehensive and broadly adopted cloud platform. 
-* Psycopg2 - PostgreSQL database adapter for Python.
-* Jinja - It is the default templating language for Django used for display data from the python application in Html templates.
-* Pillow - is a free and open source library for the Python programming language that allows you to easily create & manipulate digital images.
+* [Git](https://www.git-scm.com) - Installed on local device and 
+* [Github](https://www.github.com) - Used to host the repository of all previous versions of the build and linked to Heroku to push the latest changes to the deployed build version held there.
+* [Heroku](https://www.heroku.com) - A cloud platform as a service enabling deployment for this CRUD application.
+* [AWS](https://www.aws.amazon.com) -is the world's most comprehensive and broadly adopted cloud platform. 
+* [Psycopg2](https://www.pypi.org) - PostgreSQL database adapter for Python.
+* [Jinja](https://www.jinja.palletsproject.com) - It is the default templating language for Django used for display data from the python application in Html templates.
+* [Pillow](https://www.pillow.readthedocs.io) - is a free and open source library for the Python programming language that allows you to easily create & manipulate digital images.
 Tools Used:
-* PostgreSQL - A free and open-source relational database management system emphasizing extensibility and technical standards compliance. Designed to handle workloads including Web services with many concurrent users.
+* [PostgreSQL](https://www.postgresql.org) - A free and open-source relational database management system emphasizing extensibility and technical standards compliance. Designed to handle workloads including Web services with many concurrent users.
 * Google Chrome DevTools - Used to test the application's functionality, the responsiveness of same, and the CSS visualisation, as well as assisting in such tasks as figuring out the correct style properties to override Bootstraps user agent styling.
-* Code institute full template - tool was provided for students to this project to get us started.
-* W3C HTML Validator & W3C CSS Validator & JSHint - Used to check the validity and efficiency of my code.
-* Django Extensions Plugin - For validating my templates for any jinja rendering errors.
-* Diffchecker.com - is a diff tool to compare text differences between two text files.
-* Font Awesome Icons - For icons like shopping basket and User account
+* [Code institute full template](https://github.com/Code-Institute-Org/gitpod-full-template) - tool was provided for students to this project to get us started.
+* [W3C HTML Validator & W3C CSS Validator](https://www.jigsaw.w3.org) & JSHint - Used to check the validity and efficiency of my code.
+* [Diffchecker](https://www.diffchecker.com) - is a diff tool to compare text differences between two text files.
+* [Font Awesome](https://www.fontawsome.com) Icons - For icons like shopping basket and User account
 * Table To Markdown - Used to convert Excel spreadsheet table to markdown.
-* Wireframepro - the free option for this project
-* ParseHub-  Free web scraping tool.
-* miniwebtool - Django secret key generator
+* [Wireframepro](https://mockflow.com/apps/wireframepro/) - the free option for this project
+* [ParseHub]-(https://www.parsehub.com)  Free web scraping tool.
+* [miniwebtool](https://miniwebtool.com/django-secret-key-generator/) - Django secret key generator
 
 
 
