@@ -5,10 +5,10 @@ The site is created on a full stack Django framework, deployed on Heroku and use
 
 ![landingpage](imagesreadme4/landingpage.jpg)
 
-My [wireframe](wireframes/wireframe-ms4 (1).png
+My [wireframe](wireframes/wireframe-ms4.png)
 
 
-### ## UX
+## UX
 
 
 As a user i want to be able to do in: 
@@ -83,7 +83,7 @@ Defensive design for this application was implemented where possible via functio
 
 ###### Wireframes
 
-These wireframes are made from an extension in google docs, wireframePro.
+My [wireframes](wireframes/wireframe-ms4(1).png, wireframe-ms4.png) are made from an extension in google docs, wireframePro.
 
 
 ## Existing Features
@@ -94,7 +94,7 @@ As a user i want to be able to:                                                 
 Select a product to show more on the home page and you will be able to see products and scroll down on the page.
   
   
-![allproductpage](imagesreadme4/allproductspage.jpg)
+![allproductpage](imagereadme4/allproductspage.jpg)
 
 
 
@@ -144,7 +144,7 @@ Admin and Store Management
 
 
 
-![newcategoryadmin](imagesreadme4/newcategoryadmin)
+![newcategoryadmin](imagesreadme4/newcategoryadmin.jpg)
 
 
 
@@ -193,7 +193,7 @@ Tools Used:
 * [Font Awesome](https://www.fontawsome.com) Icons - For icons like shopping basket and User account
 * Table To Markdown - Used to convert Excel spreadsheet table to markdown.
 * [Wireframepro](https://mockflow.com/apps/wireframepro/) - the free option for this project
-* [ParseHub]-(https://www.parsehub.com)  Free web scraping tool.
+* [ParseHub](https://www.parsehub.com)  Free web scraping tool.
 * [miniwebtool](https://miniwebtool.com/django-secret-key-generator/) - Django secret key generator
 
 
