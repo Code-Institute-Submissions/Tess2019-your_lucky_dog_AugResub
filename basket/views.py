@@ -23,7 +23,7 @@ def add_to_basket(request, item_id):
     if item_id in list(basket.keys()):
         basket[item_id] += quantity
     else:
-        basket[item_id] = quantity
+        basket[item_id] = basket.get(item_id, 0) + quantity
 
     request.session['basket'] = basket
     return redirect(redirect_url)
