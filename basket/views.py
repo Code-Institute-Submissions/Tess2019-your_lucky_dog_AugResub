@@ -46,4 +46,4 @@ def adjust_basket(request, item_id):
         messages.success(request,f'Removed {product.name} to your basket')
 
     request.session['basket'] = basket
-    return redirect(reverse('view_basket')
+    return redirect(reverse('view_basket'))

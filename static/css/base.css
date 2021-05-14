@@ -98,7 +98,7 @@ a.category-badge > span.badge:hover {
     color:#fff !important;
 }
 
-.btt-button {
+.btn-button {
    position:fixed;
    bottom: 20px;
    right: 20px;
@@ -107,7 +107,9 @@ a.category-badge > span.badge:hover {
    border-radius: 5px;
 }
 
-.btt-link:hover {
+.btn-link:hover,
+.update-link,
+.remove-item {
     cursor: pointer;
     background-color: #439981;
     border-radius:5px;
@@ -148,4 +150,5 @@ a.category-badge > span.badge:hover {
     body {
         height: calc(100vh - 116px);
     }
+   
 }
