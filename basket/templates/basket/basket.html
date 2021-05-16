@@ -38,10 +38,10 @@
                            {% for item in basket_items %}
                                 <tr>
                                     <td class="p-3 w-25">
-                                        <img class ="img-fluid rounded" src="{{ item.product.image.url }}">
+                                        <img class = "img-fluid rounded" src="{{ item.product.images.url }}">
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0"><strong>{{ item.product.name}}</strong></p>
+                                        <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                                         <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                                     </td>
                                      <td class="py-3">
@@ -61,7 +61,7 @@
                                                             </span>
                                                         </button>
                                                     </div>
-                                                    <input type="number" class="form-control form-control-sm qty_input" 
+                                                    <input class="form-control form-control-sm qty_input" type="number"
                                                         name="quantity" value="{{ item.quantity }}" min="1" max="99" 
                                                         data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
                                                     <div class="input-group-append">
@@ -81,7 +81,7 @@
                                         <a class="remove-item text-danger float-right" id="remove_{{item.item_id}}"><small>Remove</small></a>                                       
                                     </td>
                                      <td class="py-3">
-                                        <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                                        <p class="my-0">${{ item.product.price }} </p>
                                         
                                     </td>
                                 </tr>
@@ -93,9 +93,9 @@
                                     <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
                                     <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
                                     {% if free_delivery_delta > 0 %}
-                                    <p class="mb-1 text-danger">
-                                       You could get free deliveryby spending just <strong>${{ free_delivery_delta }}</strong> more!
-                                    </p>
+                                        <p class="mb-1 text-danger">
+                                            You could get free delivery by spending just <strong>${{ free_delivery_delta }}</strong> more!
+                                        </p>
                                     {% endif %}
                                 </td>
                             </tr>
@@ -153,9 +153,9 @@
         var data = {'csrfmiddlewaretoken': csrfToken};
 
         $.post(url, data)
-         .done(function(){
+         .done(function() {
             location.reload();
-         });
-    })    
+        });
+    })
 </script>
 {% endblock %}
