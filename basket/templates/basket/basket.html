@@ -149,7 +149,8 @@
         //double curly brackets for the acual template varible not input field
         var csrfToken = "{{ csrf_token }}";                 
         var itemId = $(this).attr('id').split('remove_')[1];
-        var url = `/basket/remove/${itemId}`;
+        var url = `/basket/remove/${itemId}/`;
+        //remember the slash after itemId in url that is posting too
         var data = {'csrfmiddlewaretoken': csrfToken};
 
         $.post(url, data)
