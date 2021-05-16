@@ -24,7 +24,7 @@ def add_to_basket(request, item_id):
         messages.success(request, f'Updated {product.name} quantity to {basket[item_id]}')
     else:
         basket[item_id] = basket.get(item_id, 0) + quantity
-        messages.success(request,f'Added {product.name} to your basket')
+        messages.success(request, f'Added {product.name} to your basket')
 
     request.session['basket'] = basket
     return redirect(redirect_url)
@@ -42,7 +42,7 @@ def adjust_basket(request, item_id):
         messages.success(request, f'Updated {product.name} quantity to {basket[item_id]}')
     else:
         basket.pop(item_id)
-        messages.success(request,f'Removed {product.name} from your basket')
+        messages.success(request, f'Removed {product.name} from your basket')
 
     request.session['basket'] = basket
     return redirect(reverse('view_basket'))
@@ -50,7 +50,7 @@ def adjust_basket(request, item_id):
 
 def remove_from_basket(request, item_id):
     """ adjust the quantity of specified products to the specified amount """
- 
+
     product = get_object_or_404(Product, pk=item_id)
     quantity = 0
     basket = request.session.get('basket', {})
@@ -58,8 +58,7 @@ def remove_from_basket(request, item_id):
     if quantity > 0:
         del basket[item_id]
     basket.pop(item_id)
-    messages.success(request,f'Removed {product.name} from your basket')
+    messages.success(request, f'Removed {product.name} from your basket')
 
     request.session['basket'] = basket
     return HttpResponse(status=200)
-
