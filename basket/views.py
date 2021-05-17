@@ -51,14 +51,19 @@ def adjust_basket(request, item_id):
 def remove_from_basket(request, item_id):
     """ adjust the quantity of specified products to the specified amount """
 
-    product = get_object_or_404(Product, pk=item_id)
-    quantity = 0
-    basket = request.session.get('basket', {})
+    try:
+        product = get_object_or_404(Product, pk=item_id)
+        quantity = 0
+        basket = request.session.get('basket', {})
 
-    if quantity > 0:
-        del basket[item_id]
-    basket.pop(item_id)
-    messages.success(request, f'Removed {product.name} from your basket')
+        if quantity > 0:
+            del basket[item_id]
+        basket.pop(item_id)
+        messages.success(request, f'Removed {product.name} from your basket')
 
-    request.session['basket'] = basket
-    return HttpResponse(status=200)
+        request.session['basket'] = basket
+        return HttpResponse(status=200)
+
+    except Exception as e:
+        messages.error(request, f'Error removing item: {e}')
+        return HttpResponse(status=500)
