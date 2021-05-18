@@ -12,7 +12,7 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container- fluid">
+    <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-3">
                 <h2 class="logo-font">Products</h2>
@@ -86,7 +86,7 @@
                                         {% endif %}
                                         {% if product.rating %}
                                             <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
-                                            {% else %}
+                                        {% else %}
                                             <small class="text-muted">No Rating</small>
                                         {% endif %}
                                     </div>
@@ -142,21 +142,21 @@
             var selector = $(this);
             var currentUrl = new URL(window.location);
 
-            var selectVal = selector.val();
-        if(selectVal != "reset") {
-            var sort = selectVal.split("_")[0];
-            var direction = selectVal.split("_")[1];
+            var selectedVal = selector.val();
+            if(selectedVal != "reset") {
+                var sort = selectedVal.split("_")[0];
+                var direction = selectedVal.split("_")[1];
 
-            currentUrl.searchParams.set("sort", sort)
-            currentUrl.searchParams.set("direction", direction);
+                currentUrl.searchParams.set("sort", sort)
+                currentUrl.searchParams.set("direction", direction);
 
-            window.location.replace(currentUrl);   
-        }else{
-            currentUrl.searchParams.delete("sort");
-            currentUrl.searchParams.delete("direction");
+                window.location.replace(currentUrl);   
+            }else{
+                currentUrl.searchParams.delete("sort");
+                currentUrl.searchParams.delete("direction");
 
-            window.location.replace(currentUrl);
-        }
-    })
+                window.location.replace(currentUrl);
+            }
+        })
 </script>
 {% endblock %}

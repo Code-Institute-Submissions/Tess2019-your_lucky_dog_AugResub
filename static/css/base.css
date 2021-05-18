@@ -63,7 +63,7 @@ body {
 .btn-outline-black:active,
 .btn-outline-black:focus {
     background: black;
-    color: #fff !important;
+    color: white !important;
 }
 
 .shop-now-button:hover,
@@ -71,7 +71,7 @@ body {
 .shop-now-button:focus,
 .btn-blue:hover,
 .btn-blue:active,
-.btn-blue:focus{
+.btn-blue:focus {
     background: rgb(126, 126, 180);
     color: whitesmoke;
 }
@@ -112,11 +112,6 @@ a.category-badge > span.badge:hover {
 .remove-item {
     cursor: pointer;
 }
-
-/*.btt-link:hover{
-    background-color: #439981;
-    border-radius:5px;
-}*/
 
 /* ------------------------------- bootstrap toasts copied from ckz8780 */
 
