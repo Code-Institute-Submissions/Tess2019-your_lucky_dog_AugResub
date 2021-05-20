@@ -41,10 +41,10 @@
                     <div class="row">
                         <div class="col-2 mb-1">
                             <a href="{% url 'product_detail' item.product.id %}">
-                                {% if item.product.image %}
-                                    <img class="w-100" src="{{ item.product.image.url }}" alt="{{ product.name }}">
+                                {% if item.product.images %}
+                                    <img class="w-100" src="{{ item.product.images.url }}" alt="{{ product.name }}">
                                 {% else %}
-                                    <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                    <img class="w-100" src="{{ MEDIA_URL }}noimages.jpg" alt="{{ product.name }}">
                                 {% endif %}
                             </a>
                         </div>
@@ -111,7 +111,7 @@
                         <!-- Used to display form errors -->
                         <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
                     </fieldset>
-                    <!------------------------submitbutton--------------------------------------->
+                    <!------------------------submit button--------------------------------------->
                     <div class="submit-button text-right mt-5 mb-2">                    
 						<a href="{% url 'view_basket' %}" class="btn btn-outline-black rounded-0">
 							<span class="icon">
