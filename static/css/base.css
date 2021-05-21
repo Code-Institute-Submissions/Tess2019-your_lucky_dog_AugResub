@@ -39,8 +39,8 @@ body {
 }
 
 .shop-now-button {
-    background:#439981;
-    color:#fff;
+    background:white;
+    color:black;
     min-width: 260px;
 }
 /* search-button */

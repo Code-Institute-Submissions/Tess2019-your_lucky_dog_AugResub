@@ -9,6 +9,7 @@ from basket.contexts import basket_contents
 
 import stripe
 
+
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
@@ -58,7 +59,7 @@ def checkout(request):
     else:
         basket = request.session.get('basket', {})
         if not basket:
-            messages.error(request, "There's nothing in yout´r basket at the moment")
+            messages.error(request, "There's nothing in your basket at the moment")
             return redirect(reverse('products'))
         
         current_basket = basket_contents(request)
@@ -73,11 +74,11 @@ def checkout(request):
         order_form = OrderForm()
 
     if not stripe_public_key:
-        messages.warning(request, 'Stripe public is missing. \
+        messages.warning(request, 'Stripe public key is missing. \
             Did you forget to set it in your environment?')
 
     template = 'checkout/checkout.html'
-    context = { 
+    context = {
         'order_form': order_form,
         'stripe_public_key': stripe_public_key,
         'client_secret': intent.client_secret,
