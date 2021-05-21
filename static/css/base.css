@@ -39,8 +39,10 @@ body {
 }
 
 .shop-now-button {
-    background:white;
+    background:whitesmoke;
     color:black;
+    border-radius: 3px;
+    border-color: black;
     min-width: 260px;
 }
 /* search-button */
@@ -48,7 +50,7 @@ body {
    background:rgb(126, 126, 180); 
    color: whitesmoke;
 }
-/* add to bag button */
+/* add to basket button */
 
 .btn-black {
     border: 1px solid black;
