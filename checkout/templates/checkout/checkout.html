@@ -14,7 +14,7 @@
         </div>
     </div>
 {% endblock %}
-
+<!-------spinner icon for payment processing------>
 {% block content %}
     <div class="overlay"></div>
     <div class="container">
@@ -136,6 +136,13 @@
                 </form>
             </div>
         </div>
+    </div>
+    <div id="loading-overlay">
+        <h1 class="text-light logo-font loading-spinner">
+            <span class="icon">
+                <i class="fas fa-3x fa-sync-alt fa-spin"></i>
+            </span>
+        </h1>
     </div>
 {% endblock %}
 <!---use built-in template filter, json_script to render django variables in external javascript files-->
