@@ -116,7 +116,7 @@ form.addEventListener('submit', function(ev) {
                     $('#submit-button').attr('disabled', false);
                 } else {
                     if (result.paymentIntent.status === 'succeeded') {
-                        form.submit();
+                        form.submit(); // when comment out the form submission simulate a closed page by user before form was submitted or other fail.
                     }
                 }
             });
