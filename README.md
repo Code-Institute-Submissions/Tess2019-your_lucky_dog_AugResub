@@ -1,11 +1,12 @@
 ## Project
-This Milestone project is an e-commerce website. My inspiration comes from the love for my dog and the fun of buying stuff for him.
-This Application will allow an admin to store and manipulate data records. Also allow users to read about dog beds, purchase them and update or delete products in the shopping basket on your lucky dog website.
-The site is created on a full stack Django framework, deployed on Heroku and uses AWS S3 to host media and static files. While working locally it uses the Sqlite3 database, but when deployed to Heroku a Postgres database. Full authentication on site is provided by Django Allauth. Super users have availability to add, edit and delete items.
+This Milestone project is an e-commerce website. My inspiration comes from the love for my dog and the fun of buying stuff for him. A dog is a family member and should also have stuff for there own, and why not a comfy dog bed.
+This project has not been given the time that i wanted and it deserves. But i had to resubmit it for it is a course project. An  i will do an update later on
+Read about dog beds, purchase them and update or delete products in the shopping basket on your lucky dog website.
 
 ![landingpage](imagesreadme4/landingpage.jpg)
 
 My [wireframe](wireframes/wireframe-ms4.png)
+
 
 
 ## UX
@@ -70,8 +71,7 @@ For the product menu, I have chosen this order: All products, Bolster Beds, Sofa
 
 ###### Basket
 
-The shopping basket for now is showing the total sum of added products. But for now to edit or delete the basket you have to empty the cache for the page. This is due to the function of the basket not complete.
-
+The shopping basket is by default shown empty. When a user adds an item to it, they can see the product details, the basket total, the delivery cost, and the grand total, and change quantity. If they click on Secure Checkout, a form appears where the user has to write some information regarding the delivery and the payment. All fields are required to be filled out. After the checkout, they get redirected to a success page which contains an order summary and a button to shop some more. The user does not get a confirmation email yet, but they will after future implementation. After the checkout, the admin can see the order in Django Admin and Stripe dashboard as well. 
 ###### Typography
 
 The same font is used across the website. The font-weight has been adjusted accordingly for the elements that need to stand out more or need to be more readable.
@@ -85,9 +85,21 @@ Defensive design for this application was implemented where possible via functio
 
 My [wireframes](wireframes/wireframe-ms4(1).png, wireframe-ms4.png) are made from an extension in google docs, wireframePro.
 
+###### Stripe
+
+Stripe has been used here to handle payment from users.
+
+###### Back to the top 
+
+The pages can be long if not now, so with added products. To help users to not have to scroll i added i back to the top arrow in right corner thats shown when user is a bit down on page.
+
+###### Toasts
+
+Toasts are small html snippets that will pop up when user preforms an action such adding items in shopping basket. I was really impressed how good the look from UI side. The data- autohide that’s puts in the toast template from bootstrap gives the user the ability to dismiss the notification on their own. The data autohide and the data -dismiss are required to prevent the data-autohide to automatic go away in a few seconds.
 
 ## Existing Features
 
+The site is created on a full stack Django framework, deployed on Heroku and uses AWS S3 to host media and static files. While working locally it uses the Sqlite3 database, but when deployed to Heroku a Postgres database. Full authentication on site is provided by Django Allauth. Super users have availability to add, edit and delete items.
 
 As a user i want to be able to:                                                                                                                                        Viewing and Navigation
 * Want to view a list of products so I can select which to purchase.
@@ -160,14 +172,9 @@ Features left to implement
 * Product sorting for the special offers tab
 * User registration login/logout
 * Profile page with details about the user
-* Receive a confirmation email once registered in form
-* Recover my password if i forgot
-* Receive a confirmation email once registered in form
-* Checkout to process purchases and payments
-* Toast
-* Stripe payments
-* Overall consistent color scheme
-* Moore banners for showing the user special offers 
+* email confirmation, webhook handler
+* styling of images
+* profile app
 * Footer with contact information
 
 
@@ -175,11 +182,14 @@ Features left to implement
 Languages, Frameworks, Editors & Version Control:
 * HTML, CSS, JS & Python - core languages used to create this multi-page CRUD application.
 * [Django](https://www.djangoproject.com) - Used as clean and pragmatic design following the model-template-view approach.
+* [CripyForms](https://django-crispy-forms.readthedocs.io/en/latest/) - Is an application that helps to manage Django forms. It allows adjusting forms' properties (such as method, send button or CSS classes) on the backend without having to re-write them in the template.
 * [Bootstrap](https://www.getbootstrap.com) - Used as the core structuring layout for the application, ensuring mobile-first design and screen size fluidity.
 * Bootstrap's Imported Javascript & JQuery - For the Modal and Responsive Navbar expand & collapse functionality.
 * [Git](https://www.git-scm.com) - Installed on local device and 
 * [Github](https://www.github.com) - Used to host the repository of all previous versions of the build and linked to Heroku to push the latest changes to the deployed build version held there.
 * [Heroku](https://www.heroku.com) - A cloud platform as a service enabling deployment for this CRUD application.
+* [Stripe](https://stripe.com/en-se) - payment infrastructure for the internet.
+* [StripeDocs](https://stripe.com/docs) - Guides and examples to integrate Stripe. 
 * [AWS](https://www.aws.amazon.com) -is the world's most comprehensive and broadly adopted cloud platform. 
 * [Psycopg2](https://www.pypi.org) - PostgreSQL database adapter for Python.
 * [Jinja](https://www.jinja.palletsproject.com) - It is the default templating language for Django used for display data from the python application in Html templates.
@@ -195,6 +205,7 @@ Tools Used:
 * [Wireframepro](https://mockflow.com/apps/wireframepro/) - the free option for this project
 * [ParseHub](https://www.parsehub.com)  Free web scraping tool.
 * [miniwebtool](https://miniwebtool.com/django-secret-key-generator/) - Django secret key generator
+* [Tempmail](https://temp-mail.org/sv/) - temporary email, used for the Stripe payment in this project.
 
 
 
@@ -202,13 +213,21 @@ Tools Used:
 
 ## Testing
 
-
+* The SuperUser as in this project is called admin, can click on Product Management page there can  admin add new products and change in the product categories, and manage the users. This page is only available for the webshop owner.
 * Google Chrome DevTools - Used to test the application's functionality, the responsiveness of same, and the CSS visualisation, as well as assisting in such tasks as figuring out the correct style properties to override Bootstraps user agent styling.
 * Lighthouse in Chrome DevTools
 * W3C HTML Validator & W3C CSS Validator & JSHint - Used to check the validity and efficiency of my code.
+* Using the jQuery minified version to include the ajax function like post. The slim version often comes with bootstrap full version.
 * To test the responsiveness and frontend functionality of the site, as well as the CSS for the application across the same. These browsers included Google Chrome, Opera, Microsoft Edge.
 During development and ongoing testing of the Application both via local and deployed links several bugs were found that proved to be a little more than a quick fix. I've documented them here to show any bugs, whether outstanding or rectified and the method of rectifying / source material with applicable solves.
-Bugs and stuff
+ #### Bugs and stuff
+Shopping basket
+  forgot an important thing, I had to add basket tool file and a __init__.py to ensure that this directory Is treated as a Python package. This can be read more in Django documentation in create custom template tags and filters. 
+
+There is still a few bugs in my code where the user click on add to bag button the toast  preview notification is not turning up automatically in the right corner, under the basket. I have not solved this for now and you can still see the basket information if basket is clicked on. 
+
+Another thing is the mobile app size. I have not got it do modifiy as i wanted. But i's on my top priority. 
+
 Spelling mistakes
 Most of the errors throughout the project came from I noted my spelling mistakes or a forgotten quotation mark.
 One of those spelling mistakes was that I wrote a bag not a basket.
@@ -247,7 +266,12 @@ With the first help of tutor support from the code institute, an error developed
 This ultimately led to my database being corrupt, causing an  error to be displayed whenever attempts to migrate new changes to the database were made. With the help of my Mentor and Code Institute Tutors, I was guided towards resetting my Database. This was a harsh lesson from unintended consequences, I learned a lot. 
 
 
-Deployment run locally
+
+For the dropdown categories to work I had spaces in URL that gave the %20 error in terminal. Fixed that and load the data again for the categories and the products in fixtures.
+Then I had a relational database issue. I had placed a many to many field on one object which is then foreign keyed back to the item. Solved it by taking away the related_name and change capital letter in Product category.
+![dropdownerror](imagesreadme4/dropdownerror.jpg)
+
+Deployment 
 
 
 To be able to run this project, the following tools have to be installed:
@@ -279,7 +303,7 @@ pip3 install -r requirements.txt
    5. In the terminal in your IDE migrate the models to create a database using the following commands:
 python3 manage.py makemigrations
 python3 manage.py migrate
-   6. Load the data fixtures(categories, products, designers, ) in that order into the database using the following command:
+   6. Load the data fixtures(categories, products ) in that order into the database using the following command:
 python3 manage.py loaddata <fixture_name>
    7. Create a superuser to have an access to the the admin panel(you need to follow the instructions then and insert username, email and password):
 python3 manage.py createsuperuser
