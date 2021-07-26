@@ -186,4 +186,28 @@ a.category-badge > span.badge:hover {
 }
 
 /* -------------------------------- Media Queries-------------------------- */
+@media (max-width: 991px) {
+    .header-contatiner {
+        padding-top:116px;
+    }
+    body{
+        height: calc(100vh - 116px);
+    }
 
+    .display-4.logo-font.text-white {
+        font-size: 2rem;
+        padding-top: 3rem;
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: 0.5rem ;
+    }
+}
