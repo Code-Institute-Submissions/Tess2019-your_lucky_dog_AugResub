@@ -52,7 +52,7 @@ def checkout(request):
         if order_form.is_valid():
             order = order_form.save(commit=False)  # prevent multiple save events from being executed on the database by commit=False
             pid = request.POST.get('client_secret').split('_secret')[0]
-            order.stripe_pid = pid 
+            order.stripe_pid = pid
             order.original_basket = json.dumps(basket)
             order.save() 
             for item_id, item_data in basket.items():
@@ -88,7 +88,7 @@ def checkout(request):
         
         current_basket = basket_contents(request)
         total = current_basket['grand_total']
-        stripe_total = round(total *100)
+        stripe_total = round(total * 100)
         stripe.api_key = stripe_secret_key
         intent = stripe.PaymentIntent.create(
             amount=stripe_total,
