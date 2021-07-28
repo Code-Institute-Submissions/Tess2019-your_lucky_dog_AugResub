@@ -7,6 +7,26 @@ Read about dog beds, purchase them and update or delete products in the shopping
 
 My [wireframe](wireframes/wireframe-ms4.png)
 
+## open the project locally
+
+In the terminal you do this steps:
+1. Run the requirements for this project:
+
+$ pip3 install -r requirements.txt
+
+2. Load the data for the categories and the products:
+
+$ python3 manage.py loaddata categories
+$ python3 manage.py loaddata products
+
+3. For the stripe test payments to work you have to re-export the api keys each time the project starts. In addition if i was usig Gitpod i could save my Stripe Keys in my main workspace page under settings. In this readme im not going to show the keys but give them just for my submission of project for my course.
+
+$ export STRIPE_PUBLIC_KEY= (pk_test inserted here from stripe)
+$ export STRIPE_SECRET__KEY= (sk_test inserted here from stripe)
+
+4. run the project:
+
+$ python3 manage.py runserver
 
 
 ## UX
