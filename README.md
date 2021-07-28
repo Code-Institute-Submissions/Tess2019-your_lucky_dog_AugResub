@@ -1,7 +1,9 @@
 ## Project
-This Milestone project is an e-commerce website. My inspiration comes from the love for my dog and the fun of buying stuff for him. A dog is a family member and should also have stuff for there own, and why not a comfy dog bed.
-This project has not been given the time that i wanted and it deserves. But i had to resubmit it for it is a course project. An  i will do an update later on
-Read about dog beds, purchase them and update or delete products in the shopping basket on your lucky dog website.
+This Milestone project is an e-commerce website. My inspiration comes from the love for my dog and the fun of buying stuff for him. 
+A dog is a family member and should also have stuff for their own, and why not a comfy dog bed.
+My website targets the people who are looking for comfy beds and that the bed are stylish to have in their homes for their beloved dog/dogs. Dog owners have often a active lifestyle or at least active dogs, so mud and half the forest can come in to the dog beds as well. Some of the beds are made to remove the hole cover for a good wash in the washing machine, others just for easy wipe down.
+Its going to be easy in my site to navigate to the diffrent dogbeds types, as bolsterd, hooded or sofas.
+
 
 ![landingpage](imagesreadme4/landingpage.jpg)
 
@@ -190,12 +192,10 @@ Features left to implement
 
 
 
-* further design, product details and functions for the shopping Basket
 * Product sorting for the special offers tab
 * User registration login/logout
 * Profile page with details about the user
 * email confirmation, webhook handler
-* styling of images
 * profile app
 * Footer with contact information
 
