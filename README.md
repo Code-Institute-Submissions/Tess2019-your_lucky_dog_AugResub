@@ -235,13 +235,25 @@ Tools Used:
 
 ## Testing
 
-* The SuperUser as in this project is called admin, can click on Product Management page there can  admin add new products and change in the product categories, and manage the users. This page is only available for the webshop owner.
-* Google Chrome DevTools - Used to test the application's functionality, the responsiveness of same, and the CSS visualisation, as well as assisting in such tasks as figuring out the correct style properties to override Bootstraps user agent styling.
+Testing variables (should not be set in production):
+DEVELOPMENT, If set puts the project into debug mode.
+TEST_IP, Should be set to the IP address of the testing machine. When the server is run with the command: python3 manage.py runserver 0:8000 other devices on the local network will be able to connect to the site via this address for testing.
+
+I used CLI to check all the text errors in the code by using command "flake8"
+
+Trough Manually testing i used:
+* Google Chrome DevTools - Used to test the application's functionality, the responsiveness to ensure that it appeared in the desired way on different screen sizes. The CSS visualisation to figuring out the correct style properties to override Bootstraps user agent styling if needed.
+
+* To test the responsiveness and frontend functionality of the site, as well as the CSS for the application across. These browsers included Google Chrome, Opera, Microsoft Edge.
+
 * Lighthouse in Chrome DevTools
-* W3C HTML Validator & W3C CSS Validator & JSHint - Used to check the validity and efficiency of my code.
-* Using the jQuery minified version to include the ajax function like post. The slim version often comes with bootstrap full version.
-* To test the responsiveness and frontend functionality of the site, as well as the CSS for the application across the same. These browsers included Google Chrome, Opera, Microsoft Edge.
+
+* W3C, HTML Validator & W3C CSS Validator & JSHint - Used to check the validity and efficiency of my code.The W3C Validator tool doesn't recognize the Jinja templating, which has resulted in it showing a lot of errors in relation to the Jinja code. However, all other code is validating fine.
+
+
 During development and ongoing testing of the Application both via local and deployed links several bugs were found that proved to be a little more than a quick fix. I've documented them here to show any bugs, whether outstanding or rectified and the method of rectifying / source material with applicable solves.
+
+
  #### Bugs and stuff
 Shopping basket
   forgot an important thing, I had to add basket tool file and a __init__.py to ensure that this directory Is treated as a Python package. This can be read more in Django documentation in create custom template tags and filters. 
@@ -285,7 +297,7 @@ The issue of  files in the wrong place did cause me a lot of trouble. I couldn't
 
 During development I added the ManyToManyFields in the models.This was because my products were not showing in categories when i logged in as admin.
 With the first help of tutor support from the code institute, an error developed that I did when I wrote git reset (number) from my github history. But it didn't work so the other solution progress was to delete migrations files from the product app's migrations folder. 
-This ultimately led to my database being corrupt, causing an  error to be displayed whenever attempts to migrate new changes to the database were made. With the help of my Mentor and Code Institute Tutors, I was guided towards resetting my Database. This was a harsh lesson from unintended consequences, I learned a lot. 
+This ultimately led to my database being corrupt, causing an  error to be displayed whenever attempts to migrate new changes to the database were made. With the help of my Mentor and Code Institute Tutors, I was guided towards resetting my Database. This was a harsh lesson from unintended consequences, I learned a lot. The ManyToManyfield is since then been removed and everything workes fine.
 
 
 
@@ -305,9 +317,11 @@ Apart from that, you also need to create accounts with the following services:
 * [Stripe](https://stripe.org)
 * [AWS](https://aws.amazon.com) to setup the S3 basket
 * [Gmail](https://google.com)
+
 Directions
-1. You can save a copy of this repository by clicking the green button Clone or download , then Download Zip button, and after extract the Zip file to your folder.
+1. You can save a copy of this repository by clicking the green button Clone or download in Github, then Download Zip button, and after extract the Zip file to your folder.
 In the terminal window of your local IDE change the directory (CD) to the correct file location (directory that you have just created).
+
 2. Set up environment variables.
 Note, that this process will be different depending on the IDE you use.
 In this it was done using the following way:
@@ -320,27 +334,54 @@ os.environ["SECRET_KEY"] = "Your Secret key"
 os.environ["STRIPE_PUBLIC_KEY"] = "Your Stripe Public key"
 os.environ["STRIPE_SECRET_KEY"] = "Your Stripe Secret key"
 os.environ["STRIPE_WH_SECRET"] = "Your Stripe WH_Secret key"
+
    4. Install all requirements from the requirements.txt file putting this command into your terminal:
 pip3 install -r requirements.txt
-   5. In the terminal in your IDE migrate the models to create a database using the following commands:
+
+   5. Django will do most of the work of the preparing and setting up database trough 'migrations'.In the terminal in your IDE migrate the models to create a database using the following commands:
 python3 manage.py makemigrations
 python3 manage.py migrate
+to see what exactly you migrate you can do this before you migrate : python3 manage.py migrate --plan
+
    6. Load the data fixtures(categories, products ) in that order into the database using the following command:
 python3 manage.py loaddata <fixture_name>
+
+Important to load the categories before products,
+
    7. Create a superuser to have an access to the the admin panel(you need to follow the instructions then and insert username, email and password):
 python3 manage.py createsuperuser
+
+The SuperUser as in this project is called Admin that can click on Product Management page there manage the new products and change in the product categories, and manage the users. This page is only available for the webshop owner.
+
    8. You will now be able to run the application using the following command:
 python3 manage.py runserver
+
    9. To access the admin panel, you can add the /admin path at the end of the url link and login using your superuser credentials.
+
 Heroku Deployment
 To deploy the project to Heroku the following steps need to be completed:
       1. Create a requirement.txt file, which contains a list of the dependencies, using the following command in the terminal:
 pip3 freeze > requirements.txt
+
       2. Create a Procfile, in order to tell Heroku how to run the project
-      3. git add, git commit and git push these files to GitHub repository.
+
+      3. Source Control
+	The website was developed using the Atom editor with git and github for version control.
+	New changes to the local copy can be added to the remote repository by first adding:
+	git add .
+
+	Committing the changes to local version control:
+	git commit -m "<commit message>"
+
+	And pushing them to the remote repository:
+	git push
+
       4. On the Heroku website you need to create a new app, assign a name (must be unique),set a region to the closest to you(for my project I set Europe) and click Create app.
+
       5. Go to the Resources tab in Heroku, then in the Add-ons search bar look for Heroku Postgres(you can type postgres), select Hobby Dev — Free and click the Provision button to add it to your project.
+
       6. In Heroku Settings click on Reveal Config Vars.
+
       7. Set the following config variables there:
 AWS_ACCESS_KEY_ID `<your aws access key>` AWS_SECRET_ACCESS_KEY `<your aws secret access key>` DATABASE_URL `<your postgres database url>` EMAIL_HOST_PASS `<your email password(generated by Gmail)>` EMAIL_HOST_USER `<your email address>` SECRET_KEY `<your secret key>` STRIPE_PUBLIC_KEY `<your stripe public key>` STRIPE_SECRET_KEY `<your stripe secret key>` STRIPE_WH_SECRET `<your stripe wh key>` USE_AWS `True`
       8. Copy DATABASE_URL's value(Postgres database URL) from the Config Vars and temporarily paste it into the default database in settings.py.
