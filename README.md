@@ -239,14 +239,14 @@ Testing variables (should not be set in production):
 DEVELOPMENT, If set puts the project into debug mode.
 TEST_IP, Should be set to the IP address of the testing machine. When the server is run with the command: python3 manage.py runserver 0:8000 other devices on the local network will be able to connect to the site via this address for testing.
 
-I used CLI to check all the text errors in the code by using command "flake8"
+I used CLI to check all the errors in the code by using command "flake8"
 
 Trough Manually testing i used:
 * Google Chrome DevTools - Used to test the application's functionality, the responsiveness to ensure that it appeared in the desired way on different screen sizes. The CSS visualisation to figuring out the correct style properties to override Bootstraps user agent styling if needed.
 
 * To test the responsiveness and frontend functionality of the site, as well as the CSS for the application across. These browsers included Google Chrome, Opera, Microsoft Edge.
 
-* Lighthouse in Chrome DevTools
+* Lighthouse in Chrome DevTools- it gave me a more of understanding what workes or not.
 
 * W3C, HTML Validator & W3C CSS Validator & JSHint - Used to check the validity and efficiency of my code.The W3C Validator tool doesn't recognize the Jinja templating, which has resulted in it showing a lot of errors in relation to the Jinja code. However, all other code is validating fine.
 
