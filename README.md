@@ -54,49 +54,49 @@ Admin and Store Management
 
 This project was developed with a focus on a mobile approach first. However, with full responsiveness on other screen sizes. 
 
-###### Icons
+## Icons
 The icons used in this project are provided by Font Awesome 5.13.0. The icons were used on the main page in the services section, social media icons on the footer and sidebar.
 
 
-###### Colors
+## Colors
 
 I had in mind of those who have some sort of colorblindness. So i went for wat usabilla recommends to use both color and symbols to show contrast. Also I used simple cards as product displays with no other color than the product to keep it clean. I have not made the final decision on color because this is a work in progress.But for now i have wite and green #439981.For the hovering effect it's more of purple color rgb(126, 126, 180).
 
 
-###### Images
+## Images
 
 The images were collected by using ParseHub scraping webtool. I took too much time to learn the tool, and in retrospect I didn't have to use it. But I didn't find the suggestion for Kaggle to fit what I was looking for.
 The images were put in cards that were provided from Bootstrap.This was altered in css to fit the content with product information and different screen sizes.
 
-###### Product Menu
+## Product Menu
 
 For the product menu, I have chosen this order: All products, Bolster Beds, Sofa Beds and Hooded/Dome Beds and Special Offers. Within each category are the sub-categories. At this point they are not all working.
 
-###### Basket
+## Basket
 
 The shopping basket is by default shown empty. When a user adds an item to it, they can see the product details, the basket total, the delivery cost, and the grand total, and change quantity. If they click on Secure Checkout, a form appears where the user has to write some information regarding the delivery and the payment. All fields are required to be filled out. After the checkout, they get redirected to a success page which contains an order summary and a button to shop some more. The user does not get a confirmation email yet, but they will after future implementation. After the checkout, the admin can see the order in Django Admin and Stripe dashboard as well. 
-###### Typography
+## Typography
 
 The same font is used across the website. The font-weight has been adjusted accordingly for the elements that need to stand out more or need to be more readable.
 
-##### Buttons
+## Buttons
 
 The buttons are copied from bootstrap and sized to my liking.
 Defensive design for this application was implemented where possible via function views, form field types, model fields and even in the templates themselves. Throughout the development of the project, all aspects of developed and present Defensive Design elements were tested thoroughly  through local preview.
 
-###### Wireframes
+## Wireframes
 
 My [wireframes](wireframes/wireframe-ms4(1).png, wireframe-ms4.png) are made from an extension in google docs, wireframePro.
 
-###### Stripe
+## Stripe
 
 Stripe has been used here to handle payment from users.
 
-###### Back to the top 
+## Back to the top 
 
 The pages can be long if not now, so with added products. To help users to not have to scroll i added i back to the top arrow in right corner thats shown when user is a bit down on page.
 
-###### Toasts
+## Toasts
 
 Toasts are small html snippets that will pop up when user preforms an action such adding items in shopping basket. I was really impressed how good the look from UI side. The data- autohide that’s puts in the toast template from bootstrap gives the user the ability to dismiss the notification on their own. The data autohide and the data -dismiss are required to prevent the data-autohide to automatic go away in a few seconds.
 
@@ -115,7 +115,8 @@ Select a product to show more on the home page and you will be able to see produ
 
 * View individual product details.
 By selecting a product, get redirected to the product page to read a detailed description.
-  ![detailpage](imagesreadme4/detailpage.jpg)
+
+![detailpage](imagesreadme4/detailpage.jpg)
 
 
 
@@ -123,7 +124,7 @@ By selecting a product, get redirected to the product page to read a detailed de
 The total sum of added products is shown in the right corner.
 
  
- ![totalsum](imagesreadme4/totalsum.jpg)
+![totalsum](imagesreadme4/totalsum.jpg)
  
 
 
@@ -180,7 +181,8 @@ Features left to implement
 
 
 
-Languages, Frameworks, Editors & Version Control:
+# Languages, Frameworks, Editors & Version Control:
+
 * HTML, CSS, JS & Python - core languages used to create this multi-page CRUD application.
 * [Django](https://www.djangoproject.com) - Used as clean and pragmatic design following the model-template-view approach.
 * [CripyForms](https://django-crispy-forms.readthedocs.io/en/latest/) - Is an application that helps to manage Django forms. It allows adjusting forms' properties (such as method, send button or CSS classes) on the backend without having to re-write them in the template.
@@ -197,7 +199,7 @@ Languages, Frameworks, Editors & Version Control:
 * [Pillow](https://www.pillow.readthedocs.io) - is a free and open source library for the Python programming language that allows you to easily create & manipulate digital images.
 Tools Used:
 * [PostgreSQL](https://www.postgresql.org) - A free and open-source relational database management system emphasizing extensibility and technical standards compliance. Designed to handle workloads including Web services with many concurrent users.
-* Google Chrome DevTools - Used to test the application's functionality, the responsiveness of same, and the CSS visualisation, as well as assisting in such tasks as figuring out the correct style properties to override Bootstraps user agent styling.
+* [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) - Used to test the application's functionality, the responsiveness of same, and the CSS visualisation, as well as assisting in such tasks as figuring out the correct style properties to override Bootstraps user agent styling.
 * [Code institute full template](https://github.com/Code-Institute-Org/gitpod-full-template) - tool was provided for students to this project to get us started.
 * [W3C HTML Validator & W3C CSS Validator](https://www.jigsaw.w3.org) & JSHint - Used to check the validity and efficiency of my code.
 * [Diffchecker](https://www.diffchecker.com) - is a diff tool to compare text differences between two text files.
@@ -217,8 +219,9 @@ Tools Used:
 Testing variables (should not be set in production):
 DEVELOPMENT, If set puts the project into debug mode.
 TEST_IP, Should be set to the IP address of the testing machine. When the server is run with the command: python3 manage.py runserver 0:8000 other devices on the local network will be able to connect to the site via this address for testing.
+The python print() and JavaScript console.log functions were used to output variable values and breakpoints during development to give hints to where faults were occurring and why.
 
-I used CLI to check all the errors in the code by using command "flake8"
+I used CLI to check the errors in the code by using command "flake8"
 
 Trough Manually testing i used:
 * Google Chrome DevTools - Used to test the application's functionality, the responsiveness to ensure that it appeared in the desired way on different screen sizes. The CSS visualisation to figuring out the correct style properties to override Bootstraps user agent styling if needed.
@@ -233,7 +236,7 @@ Trough Manually testing i used:
 During development and ongoing testing of the Application both via local and deployed links several bugs were found that proved to be a little more than a quick fix. I've documented them here to show any bugs, whether outstanding or rectified and the method of rectifying / source material with applicable solves.
 
 
- #### Bugs and stuff
+### Bugs and stuff
 Shopping basket
   forgot an important thing, I had to add basket tool file and a __init__.py to ensure that this directory Is treated as a Python package. This can be read more in Django documentation in create custom template tags and filters. 
 
@@ -304,6 +307,7 @@ In the terminal window of your local IDE change the directory (CD) to the correc
 2. Set up environment variables.
 Note, that this process will be different depending on the IDE you use.
 In this it was done using the following way:
+
    * Create a .env file in the root directory.
    * Add .env to the .gitignore file in your project's root directory
    * In .env file set environment variables with the following syntax:
@@ -315,9 +319,11 @@ os.environ["STRIPE_SECRET_KEY"] = "Your Stripe Secret key"
 os.environ["STRIPE_WH_SECRET"] = "Your Stripe WH_Secret key"
 
    4. Install all requirements from the requirements.txt file putting this command into your terminal:
+
 pip3 install -r requirements.txt
 
    5. Django will do most of the work of the preparing and setting up database trough 'migrations'.In the terminal in your IDE migrate the models to create a database using the following commands:
+
 python3 manage.py makemigrations
 
 python3 manage.py migrate
@@ -325,12 +331,14 @@ python3 manage.py migrate
 to see what exactly you migrate you can do this before you migrate : python3 manage.py migrate --plan
 
    6.Create the data in the database by uploading pre-written data as .json. Load the data fixtures in a own folder in product folder that you name fixtures,(categories, products ) in that order into the database using the following command:
+
 python3 manage.py loaddata categories
 
 python3 manage.py loaddata products
 
 
    7. Create a superuser to have an access to the the admin panel(you need to follow the instructions then and insert username, email and password):
+
 python3 manage.py createsuperuser
 
 The SuperUser as in this project is called Admin that can click on Product Management page there manage the new products and change in the product categories, and manage the users. This page is only available for the webshop owner.
@@ -364,9 +372,19 @@ To deploy the project to Heroku the following steps need to be completed:
       6. In Heroku Settings click on Reveal Config Vars.
 
       7. Set the following config variables there:
-AWS_ACCESS_KEY_ID `<your aws access key>` AWS_SECRET_ACCESS_KEY `<your aws secret access key>` DATABASE_URL `<your postgres database url>` EMAIL_HOST_PASS `<your email password(generated by Gmail)>` EMAIL_HOST_USER `<your email address>` SECRET_KEY `<your secret key>` STRIPE_PUBLIC_KEY `<your stripe public key>` STRIPE_SECRET_KEY `<your stripe secret key>` STRIPE_WH_SECRET `<your stripe wh key>` USE_AWS `True`
 
-      8. Copy DATABASE_URL's value(Postgres database URL) from the Config Vars and temporarily paste it into the default database in settings.py.
+AWS_ACCESS_KEY_ID `<your aws access key>` 
+AWS_SECRET_ACCESS_KEY `<your aws secret access key>` 
+DATABASE_URL `<your postgres database url>` 
+EMAIL_HOST_PASS `<your email password(generated by Gmail)>` 
+EMAIL_HOST_USER `<your email address>` 
+SECRET_KEY `<your secret key>` 
+STRIPE_PUBLIC_KEY `<your stripe public key>`
+STRIPE_SECRET_KEY `<your stripe secret key>` 
+STRIPE_WH_SECRET `<your stripe wh key>` 
+USE_AWS `True`
+
+      8. Copy DATABASE_URL's value (Postgres database URL) from the Config Vars and temporarily paste it into the default database in settings.py.
 
 You can temporary comment out the current database settings code and just paste the following in the settings.py:
 
@@ -390,7 +408,7 @@ Note: for production you get the environment variable 'DATABASE_URL' from the He
 To do so, from the Heroku dashboard follow the steps:
 
          * Deploy section -> Deployment method -> select GitHub and follow the instructions.
-         15. After successful deployment, you can view your app by clicking Open App on Heroku platform.
+      15. After successful deployment, you can view your app by clicking Open App on Heroku platform.
 
 ## Hosting media files with AWS
 The static files and media files are hosted in the AWS S3 Bucket. But you are free to choose any other service you are familiar with.
@@ -421,7 +439,7 @@ In the terminal you do this steps:
 ## Credits
 
 
-###### Content
+### Content
 
 Most of the content code base presentented are followed from the Code Institute course.I'd like to thank Code Institute for a lot of what I have achieved with my project. To follow the tutorials and read the codes is an easier learning process and clearly best practice. 
 Then it’s for me to slightly personalize the page to fit my likings, for me to learn the basics this way has been amazing, then to see what can be done more to the code if i want.
@@ -431,7 +449,7 @@ Big thanks to my mentor Dick Vlaanderen for the support and guidance.
 Many thanks to the tutor support especially Tim and Cormac, they are calm and great to explain stuff. 
 
 
-###### Code
+### Code
 
 Bootstrap is the main source for the cards, buttons and input fields.
 
@@ -439,7 +457,7 @@ Bootstrap is the main source for the cards, buttons and input fields.
 The dog bed Images, text,price and description details are sourced from [Wayfair](https://www.wayfair.com/pet/cat/dog-beds-c409475.html)
 
 
-###### Acknowledgement
+### Acknowledgement
 
 
 [usabilla](https://usabilla.com/blog/how-to-design-for-color-blindness/) blog website was used to learn more about color blindness.
