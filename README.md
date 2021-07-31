@@ -10,26 +10,57 @@ Its going to be easy in my site to navigate to the diffrent dogbeds types, as bo
 My [wireframe](./wireframes)
 
 
+## Features
+Responsive on all devize sizes
+
+Interactive elements
+
+# Languages, Frameworks, Editors & Version Control:
+
+* HTML, CSS, JS & Python - core languages used to create this multi-page CRUD application.
+* [Django](https://www.djangoproject.com) - Used as clean and pragmatic design following the model-template-view approach.
+* [CripyForms](https://django-crispy-forms.readthedocs.io/en/latest/) - Is an application that helps to manage Django forms. It allows adjusting forms' properties (such as method, send button or CSS classes) on the backend without having to re-write them in the template.
+* [Bootstrap](https://www.getbootstrap.com) - Used as the core structuring layout for the application, ensuring mobile-first design and screen size fluidity.
+* Bootstrap's Imported Javascript & JQuery - For the Modal and Responsive Navbar expand & collapse functionality.
+* [Git](https://www.git-scm.com) - Installed on local device and 
+* [Github](https://www.github.com) - Used to host the repository of all previous versions of the build and linked to Heroku to push the latest changes to the deployed build version held there.
+* [Heroku](https://www.heroku.com) - A cloud platform as a service enabling deployment for this CRUD application.
+* [Stripe](https://stripe.com/en-se) - payment infrastructure for the internet.
+* [StripeDocs](https://stripe.com/docs) - Guides and examples to integrate Stripe. 
+* [AWS](https://www.aws.amazon.com) -is the world's most comprehensive and broadly adopted cloud platform. 
+* [Psycopg2](https://www.pypi.org) - PostgreSQL database adapter for Python.
+* [Jinja](https://www.jinja.palletsproject.com) - It is the default templating language for Django used for display data from the python application in Html templates.
+* [Pillow](https://www.pillow.readthedocs.io) - is a free and open source library for the Python programming language that allows you to easily create & manipulate digital images.
+Tools Used:
+* [PostgreSQL](https://www.postgresql.org) - A free and open-source relational database management system emphasizing extensibility and technical standards compliance. Designed to handle workloads including Web services with many concurrent users.
+* [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) - Used to test the application's functionality, the responsiveness of same, and the CSS visualisation, as well as assisting in such tasks as figuring out the correct style properties to override Bootstraps user agent styling.
+* [Code institute full template](https://github.com/Code-Institute-Org/gitpod-full-template) - tool was provided for students to this project to get us started.
+* [W3C HTML Validator & W3C CSS Validator](https://www.jigsaw.w3.org) & JSHint - Used to check the validity and efficiency of my code.
+* [Diffchecker](https://www.diffchecker.com) - is a diff tool to compare text differences between two text files.
+* [Font Awesome](https://www.fontawsome.com) Icons - For icons like shopping basket and User account
+* Table To Markdown - Used to convert Excel spreadsheet table to markdown.
+* [Wireframepro](https://mockflow.com/apps/wireframepro/) - the free option for this project
+* [ParseHub](https://www.parsehub.com)  Free web scraping tool.
+* [miniwebtool](https://miniwebtool.com/django-secret-key-generator/) - Django secret key generator
+* [Tempmail](https://temp-mail.org/sv/) - temporary email, used for the Stripe payment in this project.
 
 
-## UX
+
+## User Experiense (UX)
 
 
-As a user i want to be able to do in: 
+As a visitor i want to be able to: 
 
-Viewing and Navigation
-* Want to view a list of products so i can select to purchase
+* View a list of products so i can select to purchase
 * View individual product details
-* View total of purchased items any time 
-
-Sorting and Searching
-
-
-* Sort a specific category of product
+* View total of purchased items any time
+* Find New items easy 
+* Find a specific category of product
 * Search for a product by name or description
 
 
-Registration and User Accounts
+As a returning vistitor i want to be able to:
+
 * Register a account
 * Easy Sign in and out from website
 * Receive a confirmation email once registered in form
@@ -43,7 +74,7 @@ Purchase and checkout
 * Receive a email confirmation after checking out
 
 
-Admin and Store Management
+As a Admin and Store Management i want to be able to:
 * Add a product
 * Add a category
 * Edit/update product description, image, price, rating
@@ -100,11 +131,9 @@ The pages can be long if not now, so with added products. To help users to not h
 
 Toasts are small html snippets that will pop up when user preforms an action such adding items in shopping basket. I was really impressed how good the look from UI side. The data- autohide that’s puts in the toast template from bootstrap gives the user the ability to dismiss the notification on their own. The data autohide and the data -dismiss are required to prevent the data-autohide to automatic go away in a few seconds.
 
-## Existing Features
+# Testing UX
 
-The site is created on a full stack Django framework, deployed on Heroku and uses AWS S3 to host media and static files. While working locally it uses the Sqlite3 database, but when deployed to Heroku a Postgres database. Full authentication on site is provided by Django Allauth. Super users have availability to add, edit and delete items.
-
-As a user i want to be able to:                                                                                                                                        Viewing and Navigation
+As a visitor i want to be able to:                                                                                                                                       * Easily understand the main purpose of the site.
 * Want to view a list of products so I can select which to purchase.
 Select a product to show more on the home page and you will be able to see products and scroll down on the page.
   
@@ -113,14 +142,14 @@ Select a product to show more on the home page and you will be able to see produ
 
 
 
-* View individual product details.
-By selecting a product, get redirected to the product page to read a detailed description.
+* easy navigate troughout the site view individual product details
+By selecting , click on a product, get redirected to the product page to read a detailed description.
 
 ![detailpage](imagesreadme4/detailpage.jpg)
 
 
 
-* View total of purchased items any time 
+* View total of purchased items any time by clicking on the shopping cart.
 The total sum of added products is shown in the right corner.
 
  
@@ -134,7 +163,7 @@ The total sum of added products is shown in the right corner.
 
 
 
-Sorting and Searching
+
 
 
 * Sort a specific category of products.
@@ -155,7 +184,7 @@ Product name or a word for example “soft” and the result of the products wit
 ![searchengine](imagesreadme4/searchengine.jpg)
 
 
-Admin and Store Management
+ As a Admin and Store Management be able to:
 * Add a category
 
 
@@ -168,9 +197,7 @@ Admin and Store Management
 
 
 
-Features left to implement
-
-
+## Features left to implement
 
 * Product sorting for the special offers tab
 * User registration login/logout
@@ -181,40 +208,7 @@ Features left to implement
 
 
 
-# Languages, Frameworks, Editors & Version Control:
-
-* HTML, CSS, JS & Python - core languages used to create this multi-page CRUD application.
-* [Django](https://www.djangoproject.com) - Used as clean and pragmatic design following the model-template-view approach.
-* [CripyForms](https://django-crispy-forms.readthedocs.io/en/latest/) - Is an application that helps to manage Django forms. It allows adjusting forms' properties (such as method, send button or CSS classes) on the backend without having to re-write them in the template.
-* [Bootstrap](https://www.getbootstrap.com) - Used as the core structuring layout for the application, ensuring mobile-first design and screen size fluidity.
-* Bootstrap's Imported Javascript & JQuery - For the Modal and Responsive Navbar expand & collapse functionality.
-* [Git](https://www.git-scm.com) - Installed on local device and 
-* [Github](https://www.github.com) - Used to host the repository of all previous versions of the build and linked to Heroku to push the latest changes to the deployed build version held there.
-* [Heroku](https://www.heroku.com) - A cloud platform as a service enabling deployment for this CRUD application.
-* [Stripe](https://stripe.com/en-se) - payment infrastructure for the internet.
-* [StripeDocs](https://stripe.com/docs) - Guides and examples to integrate Stripe. 
-* [AWS](https://www.aws.amazon.com) -is the world's most comprehensive and broadly adopted cloud platform. 
-* [Psycopg2](https://www.pypi.org) - PostgreSQL database adapter for Python.
-* [Jinja](https://www.jinja.palletsproject.com) - It is the default templating language for Django used for display data from the python application in Html templates.
-* [Pillow](https://www.pillow.readthedocs.io) - is a free and open source library for the Python programming language that allows you to easily create & manipulate digital images.
-Tools Used:
-* [PostgreSQL](https://www.postgresql.org) - A free and open-source relational database management system emphasizing extensibility and technical standards compliance. Designed to handle workloads including Web services with many concurrent users.
-* [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) - Used to test the application's functionality, the responsiveness of same, and the CSS visualisation, as well as assisting in such tasks as figuring out the correct style properties to override Bootstraps user agent styling.
-* [Code institute full template](https://github.com/Code-Institute-Org/gitpod-full-template) - tool was provided for students to this project to get us started.
-* [W3C HTML Validator & W3C CSS Validator](https://www.jigsaw.w3.org) & JSHint - Used to check the validity and efficiency of my code.
-* [Diffchecker](https://www.diffchecker.com) - is a diff tool to compare text differences between two text files.
-* [Font Awesome](https://www.fontawsome.com) Icons - For icons like shopping basket and User account
-* Table To Markdown - Used to convert Excel spreadsheet table to markdown.
-* [Wireframepro](https://mockflow.com/apps/wireframepro/) - the free option for this project
-* [ParseHub](https://www.parsehub.com)  Free web scraping tool.
-* [miniwebtool](https://miniwebtool.com/django-secret-key-generator/) - Django secret key generator
-* [Tempmail](https://temp-mail.org/sv/) - temporary email, used for the Stripe payment in this project.
-
-
-
-
-
-## Testing
+## Further Testing
 
 Testing variables (should not be set in production):
 DEVELOPMENT, If set puts the project into debug mode.
@@ -301,7 +295,7 @@ Apart from that, you also need to create accounts with the following services:
 * [Gmail](https://google.com)
 
 Directions
-1. You can save a copy of this repository by clicking the green button Clone or download in Github, then Download Zip button, and after extract the Zip file to your folder.
+
 In the terminal window of your local IDE change the directory (CD) to the correct file location (directory that you have just created).
 
 2. Set up environment variables.
@@ -414,8 +408,32 @@ To do so, from the Heroku dashboard follow the steps:
 The static files and media files are hosted in the AWS S3 Bucket. But you are free to choose any other service you are familiar with.
 
 ## Open the project locally
+Local Clone
+ You can save a copy of this repository by clicking the green button Clone or download in Github, then Download Zip button, and after extract the Zip file to your folder.
+* Open Git Bash
+* Change the current working directory to the location where you want the cloned directory to be made.
+* Type git clone, and then paste the URL you copied of the repository.
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
-In the terminal you do this steps:
+* Press Enter. Your local clone will be created.
+
+      $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+      > Cloning into `CI-Clone`...
+      > remote: Counting objects: 10, done.
+      > remote: Compressing objects: 100% (8/8), done.
+      > remove: Total 10 (delta 1), reused 10 (delta 1)
+      > Unpacking objects: 100% (10/10), done.
+
+## Or forking the Github Repository:
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+
+Log in to GitHub and locate the GitHub Repository
+At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+You should now have a copy of the original repository in your GitHub account.
+
+
+* In the terminal you do this steps to run the project:
 1. Run the requirements for this project:
 
       $ pip3 install -r requirements.txt
@@ -435,6 +453,7 @@ In the terminal you do this steps:
 4. run the project:
 
       $ python3 manage.py runserver
+
   
 ## Credits
 
@@ -444,7 +463,7 @@ In the terminal you do this steps:
 Most of the content code base presentented are followed from the Code Institute course.I'd like to thank Code Institute for a lot of what I have achieved with my project. To follow the tutorials and read the codes is an easier learning process and clearly best practice. 
 Then it’s for me to slightly personalize the page to fit my likings, for me to learn the basics this way has been amazing, then to see what can be done more to the code if i want.
 
-Big thanks to my mentor Dick Vlaanderen for the support and guidance.
+Big thanks to my mentors Dick Vlaanderen and Aaron Sinnott for the support and guidance.
 
 Many thanks to the tutor support especially Tim and Cormac, they are calm and great to explain stuff. 
 
@@ -467,3 +486,5 @@ Some of the text snippet formulations in design in this readme is copied and nua
 
 
 The part deploying is copied from [sneachda](https://github.com/sneachda/vintage_ms4) who wrote the description so well and just had to slightly alter it. I think the deployment “how to” looks slightly all over the same so I can absolutely get sneachda credit for the description.
+
+The clone and forking of github repository is copied [lechien73](https://github.com/Code-Institute-Solutions/SampleREADME)and sligthly alterd by me.
