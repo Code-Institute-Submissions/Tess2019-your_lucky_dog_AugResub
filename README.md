@@ -11,7 +11,7 @@ My [wireframe](./wireframes)
 
 
 ## Features
-Responsive on all devize sizes
+Responsive on all device sizes
 
 Interactive elements
 
@@ -49,7 +49,7 @@ Tools Used:
 ## User Experiense (UX)
 
 
-As a visitor i want to be able to: 
+As a new user i want to be able to: 
 
 * View a list of products so i can select to purchase
 * View individual product details
@@ -59,14 +59,13 @@ As a visitor i want to be able to:
 * Search for a product by name or description
 
 
-As a returning vistitor i want to be able to:
+As a new and returning user i want to be able to:
 
 * Register a account
 * Easy Sign in and out from website
 * Receive a confirmation email once registered in form
 * Recover my password if i forgot
 * Receive a confirmation email once registered in form
-Purchase and checkout
 * View items in my shoppingbag/basket to be purchased
 * Adjust the quantity of individual products in shoppingbag/basket
 * Feel my personal and payment information is safe and secure
@@ -133,7 +132,7 @@ Toasts are small html snippets that will pop up when user preforms an action suc
 
 # Testing UX
 
-As a visitor i want to be able to:                                                                                                                                       * Easily understand the main purpose of the site.
+As a user i want to be able to:                                                                                                                                       * Easily understand the main purpose of the site.
 * Want to view a list of products so I can select which to purchase.
 Select a product to show more on the home page and you will be able to see products and scroll down on the page.
   
@@ -202,7 +201,7 @@ Product name or a word for example “soft” and the result of the products wit
 * Product sorting for the special offers tab
 * User registration login/logout
 * Profile page with details about the user
-* email confirmation, webhook handler
+* email confirmation
 * profile app
 * Footer with contact information
 
@@ -284,7 +283,8 @@ Then I had a relational database issue. I had placed a many to many field on one
 ## Deployment 
 
 
-To be able to run this project, the following tools have to be installed:
+1. To be able to run this project, the following tools have to be installed:
+
 * An IDE of your choice
 * [Git](https://git-scm.com/)
 * [PIP](https://pypi.org)
@@ -296,16 +296,17 @@ Apart from that, you also need to create accounts with the following services:
 
 Directions
 
-In the terminal window of your local IDE change the directory (CD) to the correct file location (directory that you have just created).
-
 2. Set up environment variables.
 Note, that this process will be different depending on the IDE you use.
+In the terminal window of your local IDE change the directory (CD) to the correct file location (directory that you have just created).
 In this it was done using the following way:
 
    * Create a .env file in the root directory.
    * Add .env to the .gitignore file in your project's root directory
    * In .env file set environment variables with the following syntax:
+
    3. import os
+
 os.environ["DEVELOPMENT"] = "True"
 os.environ["SECRET_KEY"] = "Your Secret key"
 os.environ["STRIPE_PUBLIC_KEY"] = "Your Stripe Public key"
@@ -412,7 +413,8 @@ Local Clone
  You can save a copy of this repository by clicking the green button Clone or download in Github, then Download Zip button, and after extract the Zip file to your folder.
 * Open Git Bash
 * Change the current working directory to the location where you want the cloned directory to be made.
-* Type git clone, and then paste the URL you copied of the repository.
+* Type git clone, and then paste the URL you copied of the repository:
+
 $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 * Press Enter. Your local clone will be created.
